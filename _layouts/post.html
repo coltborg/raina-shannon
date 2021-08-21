@@ -11,7 +11,11 @@ layout: default
     {{ content }}
 
     <div>
-      <a class="c-post__return-link" href="{{ site.baseurl }}/">Back to Portfolio</a>
+      {% if page.url contains "projects" %}
+        <a class="c-post__return-link" href="{{ site.baseurl }}/art-collection">Back to just for fun</a>
+      {% else %}
+        <a class="c-post__return-link" href="{{ site.baseurl }}/">Back to Portfolio</a>
+      {% endif %}
     </div>
   </div>
 
