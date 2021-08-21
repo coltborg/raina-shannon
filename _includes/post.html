@@ -1,9 +1,16 @@
 <div class="brick">
     {% if post.content == "" %}
-      <img class="" data-rjs="3" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
+      <a data-fslightbox href="{{ site.baseurl }}{{ post.image }}">
+        <img class="" data-rjs="3" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
+      </a>
     {% else %}
       <a class="" href="{{ site.baseurl }}{{ post.url }}">
-        <img class="" data-rjs="3" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
+        <figure>
+          <img class="" data-rjs="3" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
+          {% if post.url contains 'case-studies'  %}
+            <figcaption>{{ post.title }}</figcaption>
+          {% endif %}
+        </figure>
       </a>
     {% endif %}
 </div>

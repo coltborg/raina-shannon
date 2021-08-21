@@ -4,17 +4,11 @@ layout: default
 
 <article class="o-container">
   <h1 class="c-portfolio__title">Portfolio</h1>
-  <div class="masonry">
+  <div class="o-home-grid">
     {% for post in site.posts %}
       {% if post.categories contains 'case-studies' %}
         {% include post.html %}
       {% endif %}
     {% endfor %}
-
-    <div class="brick">
-      <a class="" href="{{ site.baseurl }}/miscellaneous">
-        <img class="" data-rjs="3" src="{{ site.baseurl }}/images/MiscCover.png" alt="Art, Design, and Sketches">
-      </a>
-    </div>
   </div>
 </article>

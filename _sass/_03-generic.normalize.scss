@@ -235,7 +235,12 @@ samp {
  */
 
 figure {
-  margin: 1em 40px;
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
 }
 
 /**
