@@ -1,16 +1,5 @@
 (function() {
   var app = {
-    'nav': {
-      'navToggleEl': document.querySelector('.js-menu-toggle'),
-      'navMenuEl': document.querySelector('.js-menu'),
-      'navInit': function () {
-        app.nav.navToggleEl.addEventListener('click', app.nav.navToggle)
-      },
-      'navToggle': function () {
-        app.nav.navToggleEl.classList.toggle('is-active');
-        app.nav.navMenuEl.classList.toggle('is-active');
-      }
-    },
     'masonry': {
       'masonryGridEl': document.querySelector('.o-grid-masonry'),
       'masonryInit': function() {
@@ -41,9 +30,6 @@
       },
     },
     'init': function() {
-      // Nav
-      app.nav.navInit();
-
       // Copyright Date
       const copyrightEl = document.querySelector('#copyright-year');
       app.getDate.applyYear(copyrightEl, app.getDate.getYear());
