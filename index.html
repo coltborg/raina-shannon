@@ -2,13 +2,15 @@
 layout: default
 ---
 
-<article class="o-container">
+<!-- <pre>
+  {{ site.categories.portfolio | inspect }}
+</pre> -->
+<!-- TODO: update classes -->
+<article class="">
   <h1 class="c-portfolio__title">Portfolio</h1>
-  <div class="o-home-grid">
-    {% for post in site.posts %}
-      {% if post.categories contains 'case-studies' %}
-        {% include post.html %}
-      {% endif %}
+  <div class="portfolio_grid">
+    {% for post in site.categories.portfolio reversed %}
+      {% include portfolio_post.html %}
     {% endfor %}
   </div>
 </article>

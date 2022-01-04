@@ -1,6 +1,5 @@
 (function() {
   var app = {
-    // Nav
     'nav': {
       'navToggleEl': document.querySelector('.js-menu-toggle'),
       'navMenuEl': document.querySelector('.js-menu'),
@@ -12,7 +11,6 @@
         app.nav.navMenuEl.classList.toggle('is-active');
       }
     },
-    // Masonry
     'masonry': {
       'masonryGridEl': document.querySelector('.o-grid-masonry'),
       'masonryInit': function() {
@@ -34,17 +32,6 @@
         });
       }
     },
-    // Retinajs
-    'retinajs': {
-      'retinajsReset': function () {
-        const retinaImgs = document.querySelectorAll('[data-rjs]');
-
-        for (var i = 0; i < retinaImgs.length; i++) {
-          retinaImgs[i].removeAttribute('width');
-          retinaImgs[i].removeAttribute('height');
-        }
-      }
-    },
     'getDate': {
       'getYear': function () {
         return new Date().getFullYear();
@@ -53,7 +40,6 @@
         el.innerHTML = year;
       },
     },
-    // Init
     'init': function() {
       // Nav
       app.nav.navInit();
@@ -62,12 +48,6 @@
       const copyrightEl = document.querySelector('#copyright-year');
       app.getDate.applyYear(copyrightEl, app.getDate.getYear());
 
-      // Retinajs
-      setTimeout(function() {
-        app.retinajs.retinajsReset();
-      }, 250);
-
-      window.addEventListener('resize', app.retinajs.retinajsReset);
 
       // If Masonry exists on the page, initialize
       if (null != app.masonry.masonryGridEl) {
