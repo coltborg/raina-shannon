@@ -8,9 +8,9 @@ layout: default
 <!-- TODO: update classes -->
 <article class="">
   <h1 class="c-portfolio__title">Portfolio</h1>
-  <div class="portfolio_grid">
+  <div class="grid-3x3">
     {% for post in site.categories.portfolio reversed %}
-      {% include portfolio_post.html %}
+      {% include figure.html %}
     {% endfor %}
   </div>
 </article>
