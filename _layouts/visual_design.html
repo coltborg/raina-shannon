@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<article class="">
+  <h1 class="c-portfolio__title">Visual Design</h1>
+  <div class="grid-3x3">
+    {% for post in site.categories['visual-design'] reversed %}
+      {% include figure.html %}
+    {% endfor %}
+  </div>
+</article>
