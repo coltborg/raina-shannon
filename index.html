@@ -3,13 +3,13 @@ layout: default
 ---
 
 <!-- <pre>
-  {{ site.categories.portfolio | inspect }}
+{{ site | inspect }}
 </pre> -->
 <!-- TODO: update classes -->
 <article class="">
   <h1 class="c-portfolio__title">Portfolio</h1>
   <div class="grid-3x3">
-    {% for post in site.categories.portfolio reversed %}
+    {% for post in site.portfolio %}
       {% include figure.html %}
     {% endfor %}
   </div>
