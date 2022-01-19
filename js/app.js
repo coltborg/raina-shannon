@@ -1,7 +1,7 @@
 (function() {
   var app = {
     'getDate': {
-      'getYear': function () {
+      'getYear': function() {
         return new Date().getFullYear();
       },
       'applyYear': function(el, year) {
