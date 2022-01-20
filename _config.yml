@@ -30,11 +30,11 @@ collections:
   art:
     permalink: /:collection/:name
     order:
-      - xmas-card-2019.html
-      - xmas-card-2018.html
-      - xmas-card-2017.html
+      - holiday-2019.html
+      - holiday-2018.html
+      - holiday-2017.html
       - persephone.html
-      - fash-collage.html
+      - layered-response.html
       - catra.html
     output: true
   visual_design:
