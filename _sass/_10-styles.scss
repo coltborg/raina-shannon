@@ -11,7 +11,20 @@
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
+}
+
+figcaption {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.figure-link {
+  color: black;
+}
+
+.figure-link:hover {
+  color: $primary;
 }
 
 // Header
