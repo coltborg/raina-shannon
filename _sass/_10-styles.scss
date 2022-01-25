@@ -53,3 +53,13 @@ em {
 .c-about p {
   max-width: 45ch;
 }
+
+.square-images figure {
+  text-align: center;
+}
+
+.square-images figure img {
+  width: 20.3125rem;
+  height: 20.3125rem;
+  object-fit: cover;
+}
