@@ -11,7 +11,15 @@ layout: default
     {{ content }}
 
     <div>
-      <a class="c-post__return-link" href="{% link _portfolio/visual-design.html %}">Back to Portfolio</a>
+      {% if page.collection == "visual_design" %}
+        <a class="c-post__return-link" href="{% link _portfolio/visual-design.html %}">
+          Back to Visual Design
+        </a>
+      {% else %}
+        <a class="c-post__return-link" href="{% link index.html %}">
+          Back to Portfolio
+        </a>
+      {% endif %}
     </div>
   </div>
 

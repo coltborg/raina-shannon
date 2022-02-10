@@ -7,7 +7,7 @@
 }
 
 .grid-3x3 {
-  --auto-grid-min-size: 20rem;
+  --auto-grid-min-size: 11rem;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -34,6 +34,10 @@ figcaption {
 }
 
 @media screen and (min-width: 40em) {
+  .grid-3x3 {
+    --auto-grid-min-size: 20rem;
+  }
+
   .header {
     text-align: initial;
     align-items: baseline;
