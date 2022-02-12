@@ -23,6 +23,10 @@
   margin-bottom: 2%;
 }
 
+.o-grid--top-align {
+  align-items: flex-start;
+}
+
 .o-home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
