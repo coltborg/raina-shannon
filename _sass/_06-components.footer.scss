@@ -1,5 +1,6 @@
 .c-footer {
   @include ms-respond(padding, 1);
+  text-align: center;
 }
 
 .c-footer__content {
