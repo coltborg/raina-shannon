@@ -47,7 +47,8 @@
 
 .c-header__link--nav {
   display: block;
-  @include ms-respond(padding, -4);
+  @include ms-respond(padding-top, -4);
+  @include ms-respond(padding-bottom, -4);
 
   @media #{$medium-up} {
     display: inline-block;

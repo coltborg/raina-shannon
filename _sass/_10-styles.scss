@@ -37,8 +37,9 @@ figcaption {
   }
 
   .header {
+    margin-top: 1rem;
     text-align: initial;
-    align-items: baseline;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,13 +56,17 @@ em {
   max-width: 45ch;
 }
 
+.square-images .c-portfolio__title {
+  margin-bottom: 0;
+}
+
 .square-images figure {
   text-align: center;
 }
 
 .square-images figure img {
-  width: 20.3125rem;
-  height: 20.3125rem;
+  width: 22rem;
+  height: 22rem;
   object-fit: cover;
 }
 
