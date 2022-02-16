@@ -49,6 +49,7 @@
   display: block;
   @include ms-respond(padding-top, -4);
   @include ms-respond(padding-bottom, -4);
+  @include ms-respond(padding, -5);
 
   @media #{$medium-up} {
     display: inline-block;
