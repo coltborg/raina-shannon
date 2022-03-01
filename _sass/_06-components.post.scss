@@ -22,6 +22,11 @@
   @include ms-respond(padding, 3);
 }
 
+.c-post__paragraph--stack {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
 .c-post__caption {
   padding: 0;
   margin: 0;
