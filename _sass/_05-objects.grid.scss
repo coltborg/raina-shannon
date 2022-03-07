@@ -23,6 +23,10 @@
   margin-bottom: 2%;
 }
 
+.o-grid--top-align {
+  align-items: flex-start;
+}
+
 .o-home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,30 +76,4 @@
   order: 2;
   margin-left: initial !important;
   margin-right: -1%;
-}
-
-.o-grid-masonry {
-  max-width: ms(9);
-}
-
-.o-grid-masonry__sizer,
-.o-grid-masonry__item {
-  width: 100%;
-
-  @media #{$o-grid-masonry__item\@medium} {
-    width: 49%;
-  }
-}
-
-.o-grid-masonry__gutter-sizer {
-  width: 0%;
-
-  @media #{$o-grid-masonry__item\@medium} {
-    width: 2%;
-  }
-}
-
-.o-grid-masonry__item {
-  float: left;
-  margin-bottom: 2%;
 }

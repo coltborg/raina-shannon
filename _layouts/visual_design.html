@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<!-- <pre>
+  {{ site | inspect }}
+</pre> -->
+
+<!-- TODO: DRY with art.html -->
+<article class="square-images">
+  <h1 class="c-portfolio__title">{{ page.title }}</h1>
+  <h2 class="c-portfolio__subtitle">{{ page.description }}</h2>
+  <div class="grid-3x3">
+    {% for post in site.visual_design %}
+      {% include figure.html %}
+    {% endfor %}
+  </div>
+</article>

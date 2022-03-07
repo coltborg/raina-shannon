@@ -1,0 +1,78 @@
+.container {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.grid-3x3 {
+  --auto-grid-min-size: 11rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1.5rem;
+  @include ms-respond(padding, -5);
+}
+
+figcaption {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.figure-link {
+  color: black;
+}
+
+.figure-link:hover {
+  color: $primary;
+}
+
+.header {
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-3x3 {
+    --auto-grid-min-size: 20rem;
+  }
+
+  .header {
+    margin-top: 1rem;
+    text-align: initial;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+strong,
+em {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.c-about p {
+  max-width: 45ch;
+}
+
+.square-images .c-portfolio__title,
+.art-post .c-post__title {
+  margin-bottom: 0;
+}
+
+.square-images figure {
+  text-align: center;
+}
+
+.square-images figure img {
+  width: 22rem;
+  height: 22rem;
+  object-fit: cover;
+}
+
+.center-image {
+  display: flex;
+  align-items: center;
+}

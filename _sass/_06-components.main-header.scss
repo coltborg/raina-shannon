@@ -31,55 +31,6 @@
   order: 2;
 }
 
-.c-header__toggle {
-  background-image: linear-gradient( 135deg, $primary, $primary 30%, $near-white 31%, $near-white);
-  background-position: 100% 0;
-  background-size: 355%;
-  border: 2px solid $primary;
-  color: $primary;
-  cursor: pointer;
-  @include ms-respond(font-size, 1);
-  @include ms-respond(padding, -5); 
-  @include transition(all $transition-time $easeOut);
-
-  &:focus {
-    outline: none;
-  }
-
-  &.is-active {
-    background-position: 0 0;
-    color: $near-white;
-  }
-
-  @media #{$medium-up} {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-.c-header__nav {
-  flex: 0 1 100%;
-  @include ms-respond(font-size, 1);
-  max-height: 0;
-  order: 3;
-  overflow: hidden;
-  text-align: center;
-  @include transition(all $transition-time $easeInOutQuart);
-
-  &.is-active {
-    max-height: 50rem;
-  }
-
-  @media#{$medium-up} {
-    flex-basis: initial;
-    @include ms-respond(font-size, 0);
-    margin-top: 0;
-    max-height: initial;
-    order: initial;
-    text-align: initial;
-  }
-}
-
 .c-header__link {
   color: $silver;
 
@@ -96,9 +47,9 @@
 
 .c-header__link--nav {
   display: block;
-  @include ms-respond(margin-bottom, 1);
-  @include ms-respond(margin-top, 1);
-  @include ms-respond(padding, -4);
+  @include ms-respond(padding-top, -4);
+  @include ms-respond(padding-bottom, -4);
+  @include ms-respond(padding, -5);
 
   @media #{$medium-up} {
     display: inline-block;

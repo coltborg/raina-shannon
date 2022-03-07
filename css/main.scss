@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 
+@import
   // Settings
   "01-settings.colors",
   "01-settings.global",
@@ -29,7 +29,6 @@
   // Objects
   "05-objects.grid",
   "05-objects.wrappers",
-  "05-objects.masonry",
 
   // Components
   "06-components.main",
@@ -44,5 +43,8 @@
   "06-components.social-links",
 
   // Trumps
-  "07-trumps.utilities"
+  "07-trumps.utilities",
+
+  // New styles
+  "10-styles"
 ;

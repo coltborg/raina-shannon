@@ -14,3 +14,36 @@ url: "https://rainashannon.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  portfolio:
+    permalink: /:collection/:name
+    order:
+      - framework-styleguide.html
+      - desktop-to-mobile.html
+      - chart-data-design.html
+      - data-science-design.html
+      - visual-design.html
+      - art.html
+    output: true
+  art:
+    permalink: /:collection/:name
+    order:
+      - holiday-2019.html
+      - holiday-2018.html
+      - holiday-2017.html
+      - persephone.html
+      - layered-response.html
+      - catra.html
+    output: true
+  visual_design:
+    permalink: /:collection/:name
+    order:
+      - amelie.html
+      - taro.html
+      - firefly.html
+      - pines.html
+      - vest-hq.html
+      - lettering-tea.html
+    output: true

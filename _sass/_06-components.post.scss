@@ -22,6 +22,11 @@
   @include ms-respond(padding, 3);
 }
 
+.c-post__paragraph--stack {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
 .c-post__caption {
   padding: 0;
   margin: 0;
@@ -30,10 +35,4 @@
 .c-post__quote {
   @include ms-respond(padding, 3);
   quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-.c-post__highlight {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-style: italic;
 }
