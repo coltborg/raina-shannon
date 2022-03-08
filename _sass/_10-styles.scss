@@ -75,4 +75,10 @@ em {
 .center-image {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
+.art-post img {
+  max-width: 75%;
+}
+
