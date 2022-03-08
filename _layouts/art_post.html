@@ -8,11 +8,13 @@ layout: default
     <h2 class="c-portfolio__subtitle">{{ page.description }}</h2>
   </header>
 
-  <div class="o-grid o-grid--post">
-    <div class="o-grid__item o-grid__item--order-2 center-image">
+  <div class="o-grid o-grid--post center-image">
+    <div class="o-grid__item" style="max-width: 65vh;">
       <img class="c-post__image" src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}">
     </div>
   </div>
+
+  {{ content }}
 
   <div>
     <a class="" href="{% link _portfolio/art.html %}">
