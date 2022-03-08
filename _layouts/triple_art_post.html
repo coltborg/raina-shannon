@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="art-post">
+<article class="triple-art-post">
 
   <header class="">
     <h1 class="c-post__title">{{ page.title }}</h1>
@@ -10,11 +10,11 @@ layout: default
 
   <div class="o-grid o-grid--post">
     <div class="o-grid__item center-image">
-      <img class="c-post__image" src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}">
+      <img class="c-post__image" style="margin-bottom: 10px;" src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}">
     </div>
+    {{ content }}
   </div>
 
-  {{ content }}
 
   <div>
     <a class="" href="{% link _portfolio/art.html %}">
