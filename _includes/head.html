@@ -1,8 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>
     {% if page.title %}
       {{ page.title | escape }}
@@ -10,6 +8,11 @@
       {{ site.title | escape }}
     {% endif %}
   </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,900&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {% if page.description %}
     <meta name="description" content="{{ page.description}}" />
   {% else %}
@@ -18,13 +21,7 @@
   {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="5; url=/">
   {% endif %}
-
   {% include favicon.html %}
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,900&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
